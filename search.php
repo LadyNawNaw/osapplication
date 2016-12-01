@@ -9,8 +9,11 @@ $sql = "SELECT * FROM os where name like '".$_GET['name']."'";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
 $row = mysqli_fetch_assoc($result);
+ echo "ok";
  echo json_encode($row);
 }
+else 
+ echo "not found";
 
 mysqli_close($conn);
 
