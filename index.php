@@ -13,7 +13,7 @@ echo "Connected successfully";
 $sql = "CREATE TABLE os (
 name VARCHAR(30) NOT NULL PRIMARY KEY,
 image VARCHAR(30) NOT NULL,
-description VARCHAR(50) NOT NULL,
+description VARCHAR(50) NOT NULL
 )";
 if (mysqli_query($conn, $sql)) {
     echo "Table created successfully";
