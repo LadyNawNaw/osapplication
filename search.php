@@ -15,10 +15,7 @@ $result = mysqli_query($conn, $sql);
 $output["OSS"]=array();
 
 while($row = mysqli_fetch_array($result)){
-$OS["nom"]=$row["nom"];
-$OS["nbusers"]=$row["nbusers"];
- $OS["nbversion"]=$row["nbversion"];
- $OS["nbsmart"]= $row["nbsmart"];
+$OS["nom"]=$row["name"];
  array_push($output["OSS"],$OS);
 }
 
