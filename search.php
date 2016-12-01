@@ -15,7 +15,7 @@ $result = mysqli_query($conn, $sql);
 $output["OSS"]=array();
 
 while($row = mysqli_fetch_array($result)){
-$OS["nom"]=$row["name"];
+$OS["name"]=$row["name"];
  array_push($output["OSS"],$OS);
 }
 
