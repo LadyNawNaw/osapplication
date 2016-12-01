@@ -21,28 +21,28 @@ if (mysqli_query($conn, $sql)) {
     echo "Error creating table: " . mysqli_error($conn);
 }
 $sql = "INSERT INTO os (name, image, description)
-VALUES ('Android', 'android.png', 'nb utilisateur:10000000')";
+VALUES ('android', 'android', 'nb utilisateur:10000000')";
 if (mysqli_query($conn,$sql)) {
     echo "New record created successfullyy";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $sql = "INSERT INTO os (name, image, description)
-VALUES ('ios', 'ios.png','nb utilisateur: 80000')";
+VALUES ('ios', 'ios','nb utilisateur: 80000')";
 if (mysqli_query($conn,$sql)) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $sql = "INSERT INTO os (name, image,description)
-VALUES ('BlackBerry', 'blachberry.png','nb utilisateur:500')";
+VALUES ('blackBerry', 'blachberry','nb utilisateur:500')";
 if (mysqli_query($conn,$sql)) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $sql = "INSERT INTO os (name, image, description)
-VALUES ('WindowsPhone', 'windowsphone.png','nb utilisateur: 90')";
+VALUES ('windowsphone', 'windowsphone','nb utilisateur: 90')";
 if (mysqli_query($conn,$sql)) {
     echo "New record created successfully";
 } else {
